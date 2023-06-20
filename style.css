@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.box-content {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+
+li {
+    font-size: 17px;
+    font-weight: 400;
+    color: #373737;
+    cursor: pointer;
+}
+#iPhone {
+    width: 350px;
+    margin-top: 70px;
+}
+
+.logo {
+    height: 20px;
+    margin-right: 100px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #626262;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #0071e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.change-color {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.change-color:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+}
+
+.blue {
+    background-color: #81A5C4;
+}
+
+.yellow {
+    background-color: #F7DA47;
+}
+
+.white {
+    background-color: #C1C1C1;
+}
+
+.black {
+    background-color: #272d33;
+}
+
+.red {
+    background-color: #b50012;
+}
+
+.purple {
+    background-color: #ede7f1;
+}
+
+.choose-color {
+    font-size: 16px;
+    color: #3a3a3a;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+#circle {
+    width: 100%;
+    height: 100%;
+    background-color: #F7DA47;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 1000px);
+    z-index: -2;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>iPhone - Apple (Brasil) </title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="./images/logo.png" />
+
+        <uL>
+            <li>Mac</li>
+            <li>iPhone</li>
+            <li>iPad</li>
+            <li>Watch</li>
+            <li>Airpods</li>
+            <li>Acessórios</li>
+            <li>Suporte</li>
+        </uL>
+
+    </header>
+
+    <div class="box-content">
+        <div>
+            <h1>iPhone 14</h1>
+            <h2>Tão poderoso. Tão ao seu alcance</h2>
+            <p>Em dois tamanhos perfeitos. Agora com um toque de amarelo. </p>
+
+            <h3>Apartir de R$633,25/mês ou 7.599*</h3>
+
+            <button>Comprar</button>
+
+            <p class="choose-color">Escolha a sua cor:</p>
+            <div>
+                <button class="blue change-color"
+                    onclick="change('./images/iphone-azul.png'); changeCircle('#81A5C4')"></button>
+                <button class="yellow change-color"
+                    onclick="change('./images/iphone-amarelo.png'); changeCircle('#F7DA47')"></button>
+                <button class="white change-color"
+                    onclick="change('./images/iphone-branco.png'); changeCircle('#C1C1C1')"></button>
+                <button class="black change-color"
+                    onclick="change('./images/iphone-preto.png'); changeCircle('#272d33')"></button>
+                <button class="red change-color"
+                    onclick="change('./images/iphone-vemelho.png'); changeCircle('#b50012')"></button>
+                <button class="purple change-color"
+                    onclick="change('./images/iphone-roxo.png'); changeCircle('#ede7f1')"></button>
+            </div>
+        </div>
+
+        <div id="circle"></div>
+
+        <img id="iPhone" src="./images/iphone-amarelo.png" alt="Imagem-iphone" />
+
+    </div>
+
+</body>
+
+<script>
+    let image = document.getElementById('iPhone')
+    let circle = document.getElementById('circle')
+
+    function change(iphone) {
+        image.src = iphone
+    }
+
+    function changeCircle(color) {
+        circle.style.background = color
+    }
+
+
+</script>
+
+</html>
